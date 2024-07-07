@@ -4,7 +4,7 @@ import React from "react";
 
 function Dictionary({ dictionary }) {
     return (
-        <div className="relative my-4 w-full lg:w-[90%] h-96 bg-gray-500 rounded-2xl overflow-hidden">
+        <div className="relative my-4 w-full lg:w-[90%] h-96 bg-gray-500 rounded-2xl overflow-hidden cursor-pointer">
             <Image
                 src={dictionary.imgUrl}
                 alt="dictionary"
@@ -18,7 +18,7 @@ function Dictionary({ dictionary }) {
                         {dictionary.subtitle}
                     </p>
                 </div>
-                <div className="border border-gray-500 border-opacity-40 backdrop-blur-lg rounded-full p-4 cursor-pointer">
+                <div className="border border-gray-500 border-opacity-40 backdrop-blur-lg rounded-full p-4">
                     <HiOutlineBookOpen size={24} />
                 </div>
             </div>
